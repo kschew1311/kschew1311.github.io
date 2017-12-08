@@ -166,6 +166,17 @@ input.userlist-name-input {
   font-size: 13px;
 }
 
+#my-pads {
+    position: absolute;
+    background-image: url(https://www.firepad.io/images/my_pads.png);
+    width: 120px;
+    height: 36px;
+    right: 230px;
+    top: 27px;
+    cursor: pointer;
+    cursor: hand;
+}
+
 body {
     margin: 8px 0px;
 }
