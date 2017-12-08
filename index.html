@@ -39,7 +39,11 @@ li a:hover {
         <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     </head>
     <body>
-
+<script type="text/javascript">
+    function toggleSavedList() {
+      $('#my-saved-list').toggle();
+    }
+</script>
 
 
 
@@ -50,6 +54,13 @@ li a:hover {
   <li><a href="#news">News</a></li>
   <li><a href="#contact">Contact</a></li>
   <li><a href="#about">About</a></li>
+  <li><a onclick="toggleSavedList()" class="button">Saved Editor  <i class="arrow down"></i></a>
+	<div id="my-saved-list" style="display: block;">
+		<div class="my-pads-item"><a>2017/12/7 17:09</a></div>
+		<div class="my-pads-item"><a>2017/12/8 21:06</a></div>
+		<div class="my-pads-item"><a>2017/12/8 21:06</a></div>
+	</div>
+  </li>
 </ul>
 
 
