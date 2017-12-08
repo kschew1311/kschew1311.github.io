@@ -1,12 +1,13 @@
 $(function() {
 
     // Initialize Firebase configuration
-    var config = {
-        apiKey: "AIzaSyAsFK9oDTtsCdqrHAfQKs8_TmNtBOoIkBY",
-        authDomain: "emma-ea74d.firebaseapp.com",
-        databaseURL: "https://emma-ea74d.firebaseio.com",
-        storageBucket: "emma-ea74d.appspot.com",
-        messagingSenderId: "95300595436"
+  var config = {
+    apiKey: "AIzaSyBbE0x8GPMMqRwuWsvKxu8RB98j0ljDWfg",
+    authDomain: "texteditor-cst333.firebaseapp.com",
+    databaseURL: "https://texteditor-cst333.firebaseio.com",
+    projectId: "texteditor-cst333",
+    storageBucket: "texteditor-cst333.appspot.com",
+    messagingSenderId: "223769247615"
     };
     firebase.initializeApp(config);
     
