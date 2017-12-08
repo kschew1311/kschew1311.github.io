@@ -1,24 +1,82 @@
 <!DOCTYPE html>
 <html>
     <head>
+
+    	<style>
+ul {
+    list-style-type: none;
+    top: 0;
+    width: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+}
+
+
+li a:hover {
+    background-color: #111;
+}
+</style>
+
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<title>Real time</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">
         <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     </head>
     <body>
-        <h2>Welcome to FireEdit!</h2>
+
+
+
+
+<ul>
+  <li>       <form >
+       		<input id="input" name="id" placeholder="Editor name">
+       </form> </li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+
+		
+        <h2>Welcome to Edit King!</h2>
+	<div class="containerBody">
+	<div class="userlistCon">
+	<div class="userlist-heading"><span>ONLINE (</span><span>1</span><span>)</span></div>
+	<div class="userlist-users">
+	<div class="userlist-user">
+	<div class="userlist-color-indicator" style="background-color: rgb(255, 128, 225);"></div>
+		<div><input type="text" class="userlist-name-input">
+			<div class="userlist-name-hint">ENTER YOUR NAME</div>
+		</div>
+	</div>
+	<div>
+		<div class="userlist-user" style="display: none;">
+		<div class="userlist-color-indicator" style="background-color: rgb(255, 128, 225);">
+	</div>
+	<div class="userlist-name">Guest 311</div></div></div></div>
+	</div>
         <div id="editor"></div>
         <div id="loader"></div>
-      
 
-
-
-	<div class="controls">
+		<div class="controls">
     
-       <form >
-       		<input id="input" name="id" placeholder="Editor name">
-       </form> 
+
     
 	    <select id="select-theme" class="select-input">
 		<optgroup label="Bright">
@@ -200,6 +258,7 @@
 		<option value="yaml">YAML</option>
 		<option value="django">Django</option>
 	    </select>
+	</div>
 	</div>
 	<script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

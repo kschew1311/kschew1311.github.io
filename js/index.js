@@ -2,13 +2,16 @@ $(function() {
 
     // Initialize Firebase configuration
   var config = {
-    apiKey: "AIzaSyBbE0x8GPMMqRwuWsvKxu8RB98j0ljDWfg",
+   apiKey: "AIzaSyBbE0x8GPMMqRwuWsvKxu8RB98j0ljDWfg",
     authDomain: "texteditor-cst333.firebaseapp.com",
     databaseURL: "https://texteditor-cst333.firebaseio.com",
     projectId: "texteditor-cst333",
     storageBucket: "texteditor-cst333.appspot.com",
     messagingSenderId: "223769247615"
+
     };
+
+
     firebase.initializeApp(config);
     
     // Get the editor id, using Url.js
@@ -68,7 +71,6 @@ $(function() {
     // It's quite useful to know that since we will
     // apply the changes in the future only
     var openPageTimestamp = Date.now();
-
     // Take the editor value on start and set it in the editor
     currentEditorValue.child("content").once("value", function (contentRef) {
 
